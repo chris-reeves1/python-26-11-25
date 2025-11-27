@@ -64,12 +64,50 @@
 # else:
 #     print("not accepted username")
 
-Exercise:
-    - weight converter
-    - user to input weight
-    - user to select either Kgs or Lbs
-    - logic: check the unit entered
-    - logic: calculate the conversion
-    - print out the result nicely!!
-    - Stretch: Error handling for incorrect unit type (upper/lower, else/while loop) 
-    - Optional: Error handling for non-numeric inputs for weight. 
+# Exercise:
+#     - weight converter
+#     - user to input weight
+#     - user to select either Kgs or Lbs
+#     - logic: check the unit entered
+#     - logic: calculate the conversion
+#     - print out the result nicely!!
+#     - Stretch: Error handling for incorrect unit type (upper/lower, else/while loop) 
+#     - Optional: Error handling for non-numeric inputs for weight. 
+
+# Try catch 
+
+# try:
+#     result = 10 / 0
+# except ZeroDivisionError as e:
+#     print(f"exception caught: {str(e)}")
+# except Exception as e:
+#     print(f"exception caught: {str(e)}")
+# finally:
+#     print("optional clean up actions go here. ")
+
+
+import sys
+
+while True:
+    try:
+        weight = int(input("enter numeric weight: ")) # if error raised here no further code is run
+        break
+    except ValueError as e:
+        print("[ERROR] - Must be numeric input!")
+        sys.exit()
+
+while True:
+    unit = input("enter the unit K or L: ").lower()
+    if unit == "k":
+        convert = weight * 2.2
+        print(convert)
+        break
+    elif unit == "l":
+        convert = weight / 2.2
+        print(convert)
+        break
+    else:
+        print("PLS enter a K or L !!")
+
+
+
