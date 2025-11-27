@@ -154,3 +154,159 @@
 
 
 - Attempt look up logic for author name (case, (partial matches - just think about))
+
+
+library = {
+"J. R. R. Tolkein": [
+{
+"name": "The Hobbit",
+"publisher": "Harper Collins",
+"year": 1937,
+"ISBN": 1127846,
+"genre": "Fantasy",
+"type": "Fiction"
+},
+{
+"name": "The Lord Of The Rings",
+"publisher": "Harper Collins",
+"year": 1957,
+"ISBN": 817268376,
+"genre": "Fantasy",
+"type": "Fiction"
+},
+{
+"name": "The Fellowship Of The Ring",
+"publisher": "Harper Collins",
+"year": 1954,
+"ISBN": 1012930983,
+"genre": "Fantasy",
+"type": "Fiction"
+}
+],
+"Michael Morpurgo": [
+{
+"name": "War Horse",
+"publisher": "Ladybird books",
+"year": 1982,
+"ISBN": 9786543210987,
+"genre": "Children's Fiction",
+"type": "Fiction"
+},
+{
+"name": "Private Peaceful",
+"publisher": "Ladybird books",
+"year": 2003,
+"ISBN": 6543567890123,
+"genre": "Children's Fiction",
+"type": "Fiction"
+},
+{
+"name": "Born To Run",
+"publisher": "Ladybird books",
+"year": 2007,
+"ISBN": 453678908765,
+"genre": "Children's Fiction",
+"type": "Fiction"
+}
+],
+"J. K. Rowling": [
+{
+"name": "Harry Potter: The Philosophers Stone",
+"publisher": "Penguin Random House",
+"year": 1997,
+"ISBN": 98765435876543,
+"genre": "Fantasy",
+"type": "Fiction"
+},
+{
+"name": "Harry Potter: The Chamber Of Secrets", # Fixed typo 'Chanber'
+"publisher": "Penguin Random House",
+"year": 1998,
+"ISBN": 19876546986,
+"genre": "Fantasy",
+"type": "Fiction"
+},
+{
+"name": "Harry Potter: The Prisoner Of Azkaban",
+"publisher": "Penguin Random House",
+"year": 1999,
+"ISBN": 3456789087654,
+"genre": "Fantasy",
+"type": "Fiction"
+}
+]
+}
+
+
+library = {
+    "ALE-PNG-1": {
+        "author": "Alex",
+        "title": "Good Sci-Fi book",
+        "publisher": "Penguin",
+        "date": "06-05-2020",
+        "genre": "sci-fi",
+        "isbn": "102398512",
+        "fiction": True
+    },
+    "ALE-BLO-2": {
+        "author": "Alex",
+        "title": "Yet another Sci-Fi",
+        "publisher": "Bloomsbury",
+        "date": "23-10-2022",
+        "genre": "sci-fi",
+        "isbn": "102342511",
+        "fiction": True
+    },
+    "MJ-PNG-3": {
+        "author": "MJ",
+        "title": "An epic fantasy",
+        "publisher": "Penguin",
+        "date": "18-02-2023",
+        "genre": "fantasy",
+        "isbn": "30232811",
+        "fiction": True
+    },
+    "JHO-PNG-4": {
+        "author": "John",
+        "title": "World War IV",
+        "publisher": "Penguin",
+        "date": "06-10-2022",
+        "genre": "history",
+        "isbn": "402542632",
+        "fiction": False
+    },
+    "JHO-BLO-5": {
+        "author": "John",
+        "title": "The deep dark secrets of World War IV",
+        "publisher": "Bloomsbury",
+        "date": "30-07-2016",
+        "genre": "mystery",
+        "isbn": "402542632",
+        "fiction": True
+    }
+}
+
+
+bookstore = { 
+    "author name":{
+        "name": "author name",
+        "birth_year": 1970,
+        "genres": ["genre1", "genre2"],
+        "books": [
+            {
+                "name": "book name",
+                "isbn": "book isbn",
+                "year": 2025,
+                "genre": "genre1",
+                "publisher": "penguin",
+            },
+            {
+                "name": "book name 2",
+                "isbn": "book isbn 2",
+                "year": 2023,
+                "genre": "genre 2",
+                "publisher": "penguin"
+            }
+        ]
+    }
+}
