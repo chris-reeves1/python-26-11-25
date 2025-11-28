@@ -71,20 +71,30 @@
 # to make or change lists
 
     #        expression        item      iterable
-result = [x**2             for x in       range(5)]
-print(result)
+# result = [x**2             for x in       range(5)]
+# print(result)
 
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-even_squared = [x**2 for x in numbers if x % 2 == 0]
-print(even_squared)
+# even_squared = [x**2 for x in numbers if x % 2 == 0]
+# print(even_squared)
 
 
 
-TASK:
-loop to get 5 names as inputs + prints with "is awesome" added to it. 
+# TASK:
+# loop to get 5 names as inputs + prints with "is awesome" added to it. 
 
-while loop
-for loop
-list comp
-STRETCH GOAL: list comp one line only! 
+# while loop
+# for loop
+# list comp
+# STRETCH GOAL: list comp one line only! 
+
+# inner 
+# [input("enter name") for n in range(5)]
+
+# outer
+# [print(f"y is awesome") for y in iterable]
+
+# x = [print(f"{y} is awesome") for y in [input("enter name") for n in range(5)]]
+
+# print(x)
