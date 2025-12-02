@@ -62,8 +62,6 @@
 # print(maths_ops(2, 5, 3, 5, 6, 7, operation="subtract"))
 
 
-# Recursion, lambdas, wrappers, functools, higher-levels.
-
 # Recursion:
 
 # def factorial(n):
@@ -119,9 +117,81 @@
 # print(list(squared))
 
 
-break here till tomoro:
-todo:
-lab 5 and 6
-practice function challenges if needed
-rock, paper, scissor game user vs computer (track stats for wins/rounds/loses etc)
-or... go back through the notes (*args, **kwargs, /, * etc)
+# break here till tomoro:
+# todo:
+# lab 5 and 6
+# practice function challenges if needed
+# rock, paper, scissor game user vs computer (track stats for wins/rounds/loses etc)
+# or... go back through the notes (*args, **kwargs, /, * etc)
+
+
+# higher-level functions
+
+# def square(x):
+#     return x * x
+
+# def apply_func(func, value):
+#     return func(value)
+
+# print(apply_func(square, 10))
+
+# def get_input():
+#     return input("Enter something...")
+
+# for item in iter(get_input, "quit"):
+#     print(f"Entered {item}")
+
+
+# wrappers:
+
+# def simple_wrapper(func):
+#     def wrapped(*args, **kwargs):
+#         print("calling wrapped function")
+#         return func(*args, **kwargs)
+#     return wrapped
+
+
+# @simple_wrapper
+# def greet(name, age):
+#     """
+#     Greets with a name and age
+#     """
+#     print(f"hello {name} + {age}")
+
+
+# print(greet.__name__)
+# print(greet.__doc__)
+# greet("c", 10)
+
+from functools import wraps, lru_cache
+import time
+
+# def simple_wrapper(func):
+#     @wraps(func)
+#     def wrapped(*args, **kwargs):
+#         print("calling wrapped function")
+#         return func(*args, **kwargs)
+#     return wrapped
+
+
+# @simple_wrapper
+# def greet(name, age):
+#     """
+#     Greets with a name and age
+#     """
+#     print(f"hello {name} + {age}")
+
+
+# print(greet.__name__)
+# print(greet.__doc__)
+# greet("c", 10)
+
+
+# @lru_cache(maxsize=None)
+# def add(a, b):
+#     print("waiting...")
+#     time.sleep(10)
+#     return a + b
+
+# print(add(2, 3))
+# print(add(2, 3))
