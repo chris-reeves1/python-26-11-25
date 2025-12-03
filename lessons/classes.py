@@ -134,16 +134,16 @@
 
 # Inheritance
 
-class Animal:
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
+# class Animal:
+#     def __init__(self, name, species):
+#         self.name = name
+#         self.species = species
 
-    def eat(self):
-        print(f"{self.name} eats...")
+#     def eat(self):
+#         print(f"{self.name} eats...")
 
-    def __str__(self):
-        return f"Animal({self.name}, {self.species})"
+#     def __str__(self):
+#         return f"Animal({self.name}, {self.species})"
 
     # def __repr__(self):
     #     return f"Animal({self.name!r}, {self.species!r})"
@@ -155,20 +155,40 @@ class Animal:
 # print(a)
 
 
-class Cat(Animal):
-    def __init__(self, name, species, breed):
-        super().__init__(name, species)
-        self.breed = breed
+# class Cat(Animal):
+#     def __init__(self, name, species, breed):
+#         super().__init__(name, species)
+#         self.breed = breed
 
-    #@Override 
-    def eat(self):
-        print(f"{self.name} as a cat not an animal eats...")
+#     #@Override 
+#     def eat(self):
+#         print(f"{self.name} as a cat not an animal eats...")
 
-    def __str__(self):
-        return super().__str__() + f"{self.__class__.__name__}{self.__dict__}, {self.breed}"
+#     def __str__(self):
+#         return super().__str__() + f"{self.__class__.__name__}{self.__dict__}, {self.breed}"
 
 
-cat1 = Cat("x", "y", "z")
-print(cat1)
-cat1.eat()
+# cat1 = Cat("x", "y", "z")
+# print(cat1)
+# cat1.eat()
 
+# Todo:
+
+# - Finish previous labs
+# - classes lab
+# - extra classes challenges
+# - Research/reading/revision
+# - rock paper scissor as class. 
+
+#1. Create a Rectangle class with attributes length and width. 
+#Add methods to calculate the area and perimeter of the rectangle. 
+
+#2. Create a BankAccount class with attributes account_number and balance. 
+#Add methods to deposit and withdraw money from the account. 
+
+#3. Create a Car class with attributes make, model, and year. 
+#Add methods to get and set the values of the attributes. 
+
+#4. Create a Product class with attributes name, price, and quantity. 
+#Add methods to calculate the total value of the product (price * quantity) 
+#and add or remove items from the product inventory. 
