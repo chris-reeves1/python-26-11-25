@@ -66,10 +66,10 @@ file.close()
 
 
 
-tips for lab:
+# tips for lab:
 
-use csvReader
-clean up/ prep for data. (list comp)
-line by line - whaat to capture? append company name s to company list sales to sales list. 
-zip() - iterates over elements in multiple tuples. - monthly sales.
-format well.  
+# use csvReader
+# clean up/ prep for data. (list comp)
+# line by line - whaat to capture? append company name s to company list sales to sales list. 
+# zip() - iterates over elements in multiple tuples. - monthly sales.
+# format well.  
